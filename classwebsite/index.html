@@ -7,6 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
   </head>
+  <style type="text/css">
+    .col-3 > .card > img {
+      max-height: 250px;
+    }
+  </style>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
@@ -20,7 +25,7 @@
               <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#heading">Link</a>
+              <a class="nav-link" href="#heading" onclick="changeTitle('About the Program')">Link</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#groupheader" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -51,27 +56,35 @@
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="4000">
             <img src="images/slide3.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
+              <h5>Sketching a Tibetan Dance model</h5>
+              <p>The student in the picture is seen trying to sketch a Tibetan in traditional costume with a specific dance moves to be used for their group project.</p>
             </div>
           </div>
           <div class="carousel-item" data-bs-interval="4000">
             <img src="images/slide1.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
+              <h5>Working Together as a Group</h5>
+              <p>A group of students seem working together on a single computer while creating their group project</p>
         </div>
           </div>
           <div class="carousel-item" data-bs-interval="4000">
             <img src="images/slide2.png" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
+              <h5>Recreating The Scene for Their Project</h5>
+              <p>Students recreating the scene for their project where they are scene resorting to hand drawing</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="images/slide4.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Understanding the Goal of the Project</h5>
+              <p>A group of students is seen discussing what they wanted to achieve for their project by writing it down first.</p>
             </div>
           </div>
         </div>
@@ -96,6 +109,44 @@
             </p>
           </blockquote>
         </div>
+         <div class="row align-items-start">
+          <div class="col-3">
+            <div class="card" style="width: auto;">
+              <h5 class="card-title">Computational Thinking</h5>
+              <img src="images/computational-thinking.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Students learned the fundamental principles of computational thinking, which is considered a critical skill for everyone in today's digital age. They engaged in problem-solving exercises, understanding how to break down complex problems into manageable parts. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: auto;">
+              <h5 class="card-title">Programming Concepts</h5>
+              <img src="images/scratch-programming.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Through hands-on projects using Scratch, they learned about sequences, loops, events, parallelism, conditionals, operators, and data management. Acitivities like drawing geometric shapes, where students had to identify and simplify repetitive patterns in their code led them to being able to create interactive scenes and simple games, fostering creativity and logical thinking.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: auto;">
+              <h5 class="card-title">Hands on Programming</h5>
+              <img src="images/web-development.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">Students learned the basics of HTML, CSS and Javascript, creating and customizing their web pages. Activities included changing background images, personalizing text, adding information and images to their websites, linking, adding basic dynamic features. It was particularly exciting as students saw their experience come to life on the web, realizing the power of coding to create tangible results.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: auto;">
+              <h5 class="card-title">Idendity Development</h5>
+              <img src="images/identity-development.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">The program was designed to lead student to their group projects where they reflect on their holistic identity. Students worked on collaborative projects that addressed community issues. Guest speakers were invited to discuss the importance of cultural identity and community involvement, prompting students to think about how their projects could benefit their community.</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="container my-5">
@@ -113,5 +164,11 @@
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script> 
+        function changeTitle(e) { 
+            document.title = e; 
+
+        } 
+    </script> 
   </body>
 </html>
