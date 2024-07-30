@@ -5,7 +5,16 @@
 :root {
   --bs-body-bg: var(--bs-gray-100);
 }
+/* carousel image styling */
 
+.col-3 > .card > img {
+      max-height: 250px;
+    }
+    .carousel-inner > .carousel-item > img
+    .carousel-inner > .carousel-item > a > img {
+      max-width: 900px;
+      margin: auto;
+}
 /* Scroll to Top Button */
 #scrollToTopButton {
     display: none; /* Hidden by default */
