@@ -13,6 +13,7 @@
     .carousel-inner > .carousel-item > img
     .carousel-inner > .carousel-item > a > img {
       max-width: 900px;
+      max-height: 400px;
       margin: auto;
 }
 /* Scroll to Top Button */
