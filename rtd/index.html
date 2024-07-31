@@ -3,39 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Summer CS Program</title>
+    <title>2024 Summer Coding Program</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
-        <a class="navbar-brand" href="index.html">Summer CS Program</a>
+        <a id="menuTitle" class="navbar-brand" href="https://yeshipal.github.io/classwebsite"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#heading">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#groupheader" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+               <a class="nav-link" href="#heading" onclick="changeTitle('About the Program')">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link" href="#groupheader" onclick="changeTitle('Group Projects')">Group Projects</a>
             </li>
+
           </ul>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -46,72 +36,127 @@
     </nav>
 
     <div class="container my-5">
-      <div id="carouselExampleDark" class="carousel carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="4000">
-            <img src="images/slide3.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="images/slide1.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-        </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="4000">
-            <img src="images/slide2.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/horrendous photo 1.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="container my-5">
-      <div id ="heading" class="card text-center">
-      <div class="card-header">
-        <h1 class="card-title">About the Program</h1>
-      </div>
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p>The field of Computer Science (CS) has become more relevant than ever as a core subject of the education system with the rise of Artificial Intelligence (AI) as an everyday tool. However, marginalized communities face unique challenges and obstacles even today in bringing equitable access, culturally relevant and meaningful CS education. CS education can be leveraged as tools to bridge disparities in equity, justice, and inclusivity in the dynamics of the world today especially in terms of educating the young, particularly for marginalized communities such as refugees, immigrants, and minorities. This research is designed to address key questions such as how CS education can and ultimately skills could be leveraged to strengthen marginalized communities in their efforts to preserve their heritage language and culture.
-            </p>
-          </blockquote>
-        </div>
-      </div>
+    <div class="carousel-item">
+      <img src="images/g.jpg" class="d-block w-100" alt="...">
     </div>
-    <div class="container my-5">
-      <div id ="groupheader" class="card text-center">
-      <div class="card-header">
-        <h1 class="card-title">Group Projects</h1>
-      </div>
-        <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p>The field of Computer Science (CS) has become more relevant than ever as a core subject of the education system with the rise of Artificial Intelligence (AI) as an everyday tool. However, marginalized communities face unique challenges and obstacles even today in bringing equitable access, culturally relevant and meaningful CS education. CS education can be leveraged as tools to bridge disparities in equity, justice, and inclusivity in the dynamics of the world today especially in terms of educating the young, particularly for marginalized communities such as refugees, immigrants, and minorities. This research is designed to address key questions such as how CS education can and ultimately skills could be leveraged to strengthen marginalized communities in their efforts to preserve their heritage language and culture.
-            </p>
-          </blockquote>
-        </div>
-      </div>
+    <div class="carousel-item">
+      <img src="images/horrendous photo 2.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
+<div id ="heading" class="card">
+  <div class="card-header">
+    About the Program
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-0">
+      <p>Through this program, students engaged in programming with Scratch to create interactive animations that reflected aspects of Tibetan culture. They developed renditions of the Tibetan alphabet, the Dharma Wheel, and the Himalaya Mountains. Utilizing tools such as the Pen and creating custom blocks, students scripted animated sprites, shapes, and creative dialogue.
+Additionally, students had the opportunity to meet and speak with guest speakers on exploring their Tibetan identity through storytelling. These interactions enriched the student’s understanding of how to integrate cultural elements into their projects while addressing broader community needs. Over this summer, we enhanced our technical skills while deepening our appreciation and knowledge of Tibet's rich history and culture. We connected more meaningfully to our heritage while advancing our programming expertise.
+
+</p>
+      <footer class="blockquote-footer"><cite title="Source Title"></cite></footer>
+    </blockquote>
+  </div>
+   <div class="row align-items-start">
+          <div class="col-3">
+            <div class="card" style="width: auto;">
+              <h5 class="card-title">Taking On Challenges</h5>
+              <img src="images/collab.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">We kick off the class with engaging tasks and challenges in Scratch. Over the past month, we have completed several Scratch projects, including "Fix it," "Tibetan Alphabet," "Collecting Only Yellow," and "Debug." These were our favorite!  In these projects, we focus on identifying and fixing broken codes, ensuring they function properly. These activities help us build a solid foundation in coding concepts
+ </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: auto;">
+              <h5 class="card-title">Communication</h5>
+              <img src="images/thinking.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">We used communication both in Scratch and while collaborating with our classmates. In groups, we planned daily activities and divided our roles every morning. In Scratch, we facilitated communication between our sprites and other programming elements. We learned just how important effective communication is to achieving success, both in AI projects and in real world scenarios. 
+</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: auto;">
+              <h5 class="card-title">Critical Thinking</h5>
+              <img src="images/handson.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">When faced with a complex project, our teacher taught us that breaking it into smaller, more manageable components makes it easier to understand and tackle. For instance, in our maze project, we started by designing the background, then programmed the sprite's movement, and finally added a timer as an extra challenge. It not only made the project less overwhelming but helped us develop our problem-solving skills.
+</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card" style="width: auto;">
+              <h5 class="card-title">Web Devlopment and Tools</h5>
+              <img src="images/laugh.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="card-text">In addition to Scratch, GitHub is an essential tool used in our classroom community. We built our own websites using Github and utilized Sublime Text for coding and text editing, diving into the structure of different coding languages like HTML. This hands-on experience taught us how different coding languages work together to create functional and visually appealing websites.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+      </div>
+    </div>
+<div class="container my-5">
+      <div id ="groupheader" class="card text-center">
+        <div class="card-header">
+          <h1 class="card-title">Group Projects</h1>
+        </div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>The field of Computer Science (CS) has become more relevant than ever as a core subject of the education system with the rise of Artificial Intelligence (AI) as an everyday tool. However, marginalized communities face unique challenges and obstacles even today in bringing equitable access, culturally relevant and meaningful CS education. CS education can be leveraged as tools to bridge disparities in equity, justice, and inclusivity in the dynamics of the world today especially in terms of educating the young, particularly for marginalized communities such as refugees, immigrants, and minorities. This research is designed to address key questions such as how CS education can and ultimately skills could be leveraged to strengthen marginalized communities in their efforts to preserve their heritage language and culture.
+            </p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+      <div class="container text-center">
+        <div class="row align-items-center">
+          <div class="col">
+            <span class="badge text-bg-info"><h4>The Untold Truth in Tibet</h4></span>
+            <p>The Untold Truth is a short story displaying a monk taking a foreign tourust around Tibet. It shows the things the CCP is hding from the outside world...</p>
+            <iframe src="https://scratch.mit.edu/projects/1050983909/embed" 
+                  allowtransparency="true" width="485" height="402" frameborder="0" 
+                  scrolling="no" allowfullscreen></iframe>
+                  </div>
+          <div class="col">
+            <span class="badge text-bg-info"><h4>Collect the Gold </h4></span>
+            <p>This is an project based on the problem in Tibet. The problem is that China is mining resources in Tibet like Lithium and Gold and that is disrupting the economy of Tibet.</p>
+            <iframe src="https://scratch.mit.edu/projects/1049188643/embed" 
+                  allowtransparency="true" width="485" height="402" frameborder="0" 
+                  scrolling="no" allowfullscreen></iframe>
+                   </div>
+          <div class="col">
+            <span class="badge text-bg-info"><h4>Four Harmonious Brothers </h4></span>
+            <p>This is an interesting project conceptualized and developed initially by some of the students. Tibetan alphabets are unique and follow basic steps to achieve the hand writing. Therefore, through the lens of programming approach, we can identify parts of alphabets that make the character. This involves abstraction, reuse and simplification.</p>
+            <iframe src="https://scratch.mit.edu/projects/1045507298/embed" 
+                  allowtransparency="true" width="485" height="402" frameborder="0" 
+                  scrolling="no" allowfullscreen></iframe>
+          </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <button id="scrollToTopButton" onclick="scrollToTop()">Go to the Top</button>
+      <div class="container text-center">
+        <p>2024 Summer CS Program, Queens</p>
+      </div>
   </body>
 </html>
