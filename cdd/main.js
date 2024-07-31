@@ -8,7 +8,7 @@ function changeTitle(e) {
 
 function getRandomColor() {
             let letters = '0123456789ABCDEF';
-            let color = '#163832';
+            let color = '#';
             for (let i = 0; i < 6; i++) {
                 color += letters[Math.floor(Math.random() * 16)];
             }
