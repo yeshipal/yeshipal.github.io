@@ -5,13 +5,6 @@
 :root {
   --bs-body-bg: var(--bs-gray-100);
 }
-/*
- * Custom CSS
- */
-
-:root {
-  --bs-body-bg: var(--bs-gray-100);
-}
 /* carousel image styling */
 
 .col-3 > .card > img {
